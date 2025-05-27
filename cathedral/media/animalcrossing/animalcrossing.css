@@ -1,0 +1,149 @@
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url('../../../graphics/bgs/acleaf.png');
+        font-family: verdana,sans-serif;
+        font-size: 12px;
+        line-height: 1.3em;
+        color: #4B3B40;
+      }
+
+      body a {
+        color: #4B3B40;
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing: 1px;
+      }
+
+      #main-container {
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 7%;
+        background-color: none;
+        border-radius: 12px;
+      }
+
+      .flex {
+        display: flex;
+        margin-bottom: 5px;
+      }
+
+      #content-container {
+        width: 75%;
+        height: 500px;
+        margin-bottom: 5px;
+        overflow: auto;
+        background-color: #BFE3B1;
+        border: 3px solid #40B607;
+        border-radius: 12px;
+        text-align: center;
+      }
+
+      #left-sidebar {
+        width: 25%;
+        height: 500px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+        overflow: hidden;
+        background-color: #BFE3B1;
+        border: 3px solid #40B607;
+        border-radius: 12px;
+      }
+
+      #header-contained {
+        height: 100px;
+        width: 100%;
+        background-image: url('../../../graphics/dividers/photos.gif');
+        background-repeat: repeat-x;
+        background-position: center top;
+        z-index: 1;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+
+      #footer-gen {
+        height: 50px;
+        width: 100%;
+        background-image: url('../../../graphics/garden/sunflowerfence.gif');
+        background-repeat: repeat-x;
+        background-position: center bottom;
+        z-index: 1;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+      }
+
+      .wrapper {
+        padding: 25px;
+        padding-top: 15px;
+      }
+
+      .sidebar-wrapper {
+        padding: 15px;
+        height: 500px;
+        overflow: auto;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      th, td {
+        padding: 3px;
+      }
+
+      tr:nth-child(odd) {
+        background-color: #40B607;
+      }
+
+     .sideimg {
+        overflow: hidden;
+       /* Magic */
+       display: flex;
+       align-items: center; /* vertical */
+       justify-content: center; /* horizontal */
+      }
+
+      /* To keep your site RESPONSIVE, make sure this variable matches the width for --container-width UNLESS --container-width is 100% - if it's 100%, you'll need to manually input a breakpoint. */
+      @media only screen and (max-width: 800px) {
+        .flex {
+          flex-wrap: wrap;
+        }
+
+        #main-container {
+          margin-top: 0px;
+        }
+
+        #left-sidebar {
+          width: 80%;
+          height: 625px;
+          display: block;
+          order: 3;
+          margin: 20px auto;
+        }
+
+        #content-container {
+          width: 80%;
+          height: 625px;
+          display: block;
+          order: 2;
+          margin: -30px auto 0px;
+        }
+
+        #header-contained {
+          position: -webkit-sticky;
+          position: sticky;
+          top: 0;
+        }
+
+        #footer-gen {
+          position: -webkit-sticky;
+          position: sticky;
+          bottom: 0;
+        }
+      } 

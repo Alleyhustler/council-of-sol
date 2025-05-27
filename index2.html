@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from cyberneticdryad.neocities.org/index2 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 May 2025 08:39:32 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cybernetic Dryad">
+    <meta name="keywords" content="cyberneticdryad, dryad glen">
+    <title>Dryad Glen</title>
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="components.js"></script> 
+    <link href="components/rosecottage.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+      #floral {
+  		  width: 604px; 
+  		  height: 30px; 
+  		  background-image: url('graphics/dividers/flowerspinklong.png');
+  		  background-repeat: repeat-x; 
+  		  background-position: center center;
+  		  margin-bottom:10px;
+  		}
+  		
+  		#welcome {
+  		  height:285px; 
+  		  width: 380px; 
+  		  padding: 5px;
+  		  margin: 5px;
+  		  overflow: hidden;
+  		}
+  		
+  		#updates {
+  		  height:160px; 
+  		  width: 380px;
+  		  background-color: rgba(226, 209, 165, 0.3);
+  			border: 1px dotted black; 
+  			border-radius: 10px; 
+  			padding: 8px;
+  			margin: 5px;
+  			overflow: auto;
+  		}
+  		
+  		#todo {
+  		  height:220px; 
+  		  width: 185px; 
+  		  padding: 8px; 
+  		  margin: 5px auto; 
+  		  overflow: auto; 
+  		  background-image: url('graphics/bgs/tilepaperline.gif')
+  		}
+  		
+  		#linkme {
+  		  height:220px; 
+  		  width: 100px; 
+  		  text-align: center; 
+  		  background-color: rgba(226, 209, 165, 0.3);
+  			border: 1px dotted black; 
+  			border-radius: 10px; 
+  			padding: 8px;
+  			margin: 5px;
+  			overflow: hidden;
+  		}
+  		
+  		#joined {
+  		  height:220px; 
+  		  width: 250px;
+  		  text-align: center;
+  		  background-color: rgba(226, 209, 165, 0.3);
+  			border: 1px dotted black; 
+  			border-radius: 10px; 
+  			padding: 8px;
+  			margin: 5px;
+  			overflow: auto;
+  		}
+  		
+  		@media only screen and (max-width: 800px) {
+  		  #welcome {
+  		    height: 100%;
+  		  }
+  		  
+  		  #updates {
+  		    height: 250px;
+  		  }
+  		  
+  		  #todo {
+  		    width: 280px;
+  		  }
+  		  
+  		  #linkme {
+  		    width: 280px;
+  		    height: 100%;
+  		  }
+  		  
+  		  #joined {
+  		    width: 280px;
+  		  }
+  		  
+  		  #floral {
+  		    background-image: url('graphics/garden/divsunflowerrose.gif');
+  		    background-size: cover;
+  		  }
+  		  
+  		  .blinkiedisplay {
+  		    padding-bottom: 15px;
+  		  }
+  		}
+		
+    </style>
+  </head>
+  <body>
+    <div id="sidewidgets"></div>
+    <div id="navi"></div>
+    <div id="container">
+      <div class="content-wrap flex alignment">
+        <div id="main" style="overflow:hidden">
+          <div class="wrapper">
+            <div>
+              <div class="content-wrap flex alignment">
+  						<div id="welcome">
+  							<h2>Welcome to Dryad Glen!</h2>
+  							<p>And thank you for visiting my little home~  I try to stop by every few days, but you can always reach out to me elsewhere.  (Mostly tumblr, but anywhere you see a cyberneticdryad is fair game!)</p>
+  							<p>While you're here, I would love if you signed my <a href="http://users.smartgb.com/g/g.php?a=s&amp;i=g19-00323-07">guestbook</a>! I'm making a playlist over on <a href="https://open.spotify.com/playlist/37Feh10nJgfAz6GhMwspuk">Spotify</a> and <a href="https://music.youtube.com/playlist?list=PLk9QsdwlPwJfmIf7sMq0sMpDjBhyWriq0&amp;si=OsHvLaM1DlGu09sf">YouTube</a> of songs suggested by my lovely visitors.  =3</p>
+  						</div>
+  						<div class="blinkiedisplay">
+  							<img src="collections/blinkies/rackteddylamp.gif">
+  							<img src="collections/blinkies/webweaver.gif">
+  							<img src="collections/blinkies/fleeceonearth.gif">
+  							<img src="collections/blinkies/scenic.gif">
+  							<img src="collections/blinkies/rawr.gif">
+  							<img src="collections/blinkies/believeyrself.gif">
+  							<img src="collections/blinkies/cringsisdead.gif">
+  					    <img src="collections/blinkies/colorchangelightsaber.gif">
+  							<img src="collections/blinkies/drink-some-water.gif">
+  							<img src="collections/blinkies/typocat.gif">
+  						 </div>
+  						<div id="floral"></div>
+  						<div style="margin: 0 auto;">
+  							<img src="graphics/illustrations/tenantsoftrees00hawk_0013.png" style="width: 200px;">
+  						</div>
+  						<div class="scrollfun" id="updates">
+  							<h3>Update Log</h3>
+  							<div>
+  							  <p>5/18/2025 | <a href="journal/index.html">Journal update</a>. Made a few little edits around the kitchen and added <a href="home/kitchen/recipes/meatloaf.html">my meatloaf recipe</a>!</p>
+  							  <center><img src="graphics/dividers/carousel.gif"></center>
+  							  <p>3/12/2025 | Added some links to the <a href="cathedral/media/starwars/kotor.html">KotOR Shrine</a> as well as some old LiveJournal/DeviantArt links to the KotOR <a href="cathedral/media/starwars/fanworks.html">Fanworks page</a>. Added one fun link and a couple open access image resources to my general <a href="collections/links.html">links page</a>.  Also thank you for 300 followers!  I know there are a few more of you as some of you are on other parts of the indieweb, but really from the bottom of my heart, thank you for all of your own work for inspiring me to start and continue with Dryad Glen.  =3</p>
+  							  <center><img src="graphics/dividers/carousel.gif"></center>
+  							  <p>02/12/2025 | <a href="journal/index.html">Journal update</a> once again!  Added a couple <a href="home/kitchen/recipes/index.html">recipes</a> and <a href="home/kitchen/notes.html">recipe notes</a>.</p>
+  							  <center><img src="graphics/dividers/carousel.gif"></center>
+  							  <p>01/29/2025 | Updated my journal for the new year finally!  To the archive with 2024, and forward we adventure into 2025.</p>
+  							  <center><img src="graphics/dividers/carousel.gif"></center>
+  							  <p>12/29/2024 | Just a lot of link updates today!  Sad to see more linkrot via deleted/archived sites and/or no redirects, but we persist!</p>
+  							  <center><img src="graphics/dividers/carousel.gif"></center>
+  							  <p>12/26/2024 | Happy holidays all!  Made one last <a href="journal/index.html">journal update</a> for 2024.  Started listing out my <a href="home/noteboard.html">2025 goals</a>.  Added one new <a href="home/kitchen/recipes/index.html">recipe link</a>.  Wrote up some of my thoughts on <a href="cathedral/media/dragonage/daveil.html">Veilguard</a> even though I haven't finished it yet!</p>
+  							  <center><img src="graphics/dividers/carousel.gif"></center>
+  							  <p>10/16/2024 | Updated the guestbook playlists on spotify and youtube.  Updated the welcome text on the <a href="index2.html">second index</a>, adjusted the decor a bit, and added my new buttons! (It's been almost a year since my site overhaul, can you believe?)  Cleaned up a couple broken links, squashed some typos. Made some lil updates to my <a href="cathedral/media/dragonage/index.html">Dragon Age</a> shrine and added the bones for a Veilguard page.  Added Tallie to my <a href="cathedral/media/pokemon/mybabies.html">personal pokemon</a> page.  Am still lost in fiber arts land, and Dragon Age coming out at the end of the month won't help!</p>
+  							  <center><img src="graphics/dividers/carousel.gif"></center>
+  							  <p>09/13/2024 | Added one new <a href="home/kitchen/recipes/index.html">recipe</a>.  Added two new <a href="collections/joined.html">fanlistings</a> and updated one.  Updated my <a href="home/noteboard.html">2024 goals</a> because I've had to change a lot of plans and expectations for the year.</p>
+  							  <center><img src="graphics/dividers/carousel.gif"></center>
+  							  <p>09/02/2024 | Hello friends!  Short <a href="journal/index.html">journal</a> update about IRL life taking over my online life for a bit, added a couple <a href="home/kitchen/recipes/index.html">recipe</a> links, added Seafare's <a href="https://seafare.neocities.org/dragon age/">Dragon Age</a> shrine to my page for <a href="cathedral/others.html">others' shrines</a> because I TOO AM MOVING INTO DRAGON AGE MODE.  Missed you all, and can't wait to see what y'all've been up to!</p>
+  							  <center><img src="graphics/dividers/carousel.gif"></center>
+  							  <p>Happy Pride to all my favourite queer folks on the internet!  Just a some small updates while my brain continues to be consumed by spinning and crochet projects to cope with work changes: Updated the <a href="home/library/index.html">library</a> with what I'm currently reading including updates for June bookbug.  Added one new recipe we liked to the <a href="home/kitchen/index.html">kitchen</a> and updated my pantry a bit.  I am slowly working on updating my neighbors on my links page, so if you're not up, please bear with me!  I promise it's happening a lil bit at a time.</p>
+  							  <center><img src="graphics/dividers/carousel.gif"></center>
+  							  <p>05/05/2024 | Quick <a href="journal/index.html">journal</a> update.  Updated the <a href="home/library/bookbug.html">bookbug</a> members (there sure are a lot of us now!).</a>
+  							  <center><img src="graphics/dividers/carousel.gif"></center>
+  							  <p>5/4/2024 | May the 4th be with you!  Mostly updates to the <a href="home/library/index.html">library</a> today: updated my currently reading list, added one book to my 2024 library picks, and started my entry for May bookbug.  Also added one new link to the <a href="home/kitchen/recipes/index.html">recipes</a> page.</p>
+  							  <center><img src="graphics/dividers/carousel.gif"></center>
+  							  <p>04/20/2024 | <a href="journal/index.html">Journal update</a> about my birthday and my unexpected absence from the site.  Updated the guestbook playlists on spotify and youtube.  Updated some <a href="collections/joined.html">fanlisting/cliques</a> links and added one.  Added a couple more <a href="home/kitchen/recipes/index.html">recipes</a> we've tried.  Otherwise just typo squishing and making little odds and ends of code neater to get me back in the swing of things!</p>
+  							  <center><img src="graphics/dividers/carousel.gif"></center>
+  							  <p>03/03/2024 | Lots of little backend updates to various links (mostly moved/inactive fanlistings), moving site components, cleaning up some dumb coding stuff (because sometimes I brute force things when I know there's a better way but I'm frustrated).  Started a <a href="home/crafts/crochet.html">crochet</a> page.</p>
+  							  <center><img src="graphics/dividers/carousel.gif"></center>
+  							  <p>For older updates, check the <a href="journal/updates.html">archive</a>!</p>
+    						</div>
+  						</div>
+  						<div id="floral"></div>
+  						 <div class="scrollfun" id="todo">
+  							<h3>To Do List</h3>
+  							<ul>
+  								<li>Add RSS feed</li>
+  								<li>Update credits page</li>
+  								<li>Update Neocities Neighbors</li>
+  								<li>More media shrines (Wolf's Rain, Mass Effect, mahou shoujo)</li>
+  								<li>Join a bajillion pixel clubs</li>
+  								<li>Listening Room</li>
+  								<li>Pictures for the library</li>
+  								<li>Pictures for crafting pages</li>
+  								<li>New recipes!</li>
+  							</ul>
+  						 </div>
+  						<div id="linkme">
+  							<h4>Link me!<br></h4>
+  							<img src="graphics/socials/cdbutton2-1.png"> <img src="graphics/socials/cdbutton2-2.gif">
+  							<br>
+  							<small>save to your own server please!</small>
+  						</div>
+  						<div class="scrollfun" id="joined">
+  							<center>
+                  <a href="https://inkcaps.neocities.org/links/neopets/" title="the rainbow fountain weblisting | neopets"><img src="graphics/mine/rainbowfountaingrey.png" style="float:left;padding-left: 5px;"></a>
+                  <a href="https://cliqued.wings.nu/">NPC</a> <img src="collections/cliques/teal.png"> Shiala<br>
+                  <a href="https://cliques.gensoukai.net/dye/"><img src="collections/cliques/suicideparty.gif" alt="i have teal hair" title="I sold my soul to Lunar Tides & Punky Colors"></a>
+                  <a href="http://pkmn.caelestis.nu/" target="_blank" rel="noopener noreferrer" style="border: 0px none; background: transparent;" title="I Choose You! :: FURRET"><img src="collections/cliques/ichooseyou.png" style="margin: -15px -15px 0px -15px;"></a>
+                  <br>
+                  <a href="https://faeriepunk.net/"><img src="collections/cliques/faeriepunk.png" alt="faeriepunk" title="FAERiEPUNK"></a>
+                  <a href="https://pixelrevival.xyz/apple/"><img src="collections/cliques/apple6.gif"></a>
+                  <br>
+                  <a href="https://sanguineroyal.com/extra/barbieland" target="_new"><img src="collections/cliques/barbie.png" style="height: 14px; width:14px;"></a> This Barbie is a fiber artist!<br><br>
+                  
+  							<div id="bisexualism">
+                  <script type="text/javascript" src="../emeowly.github.io/bi/onionring-variables.js" defer></script>
+                  <script type="text/javascript" src="../emeowly.github.io/bi/onionring-img-widget.js" defer></script>
+                </div>
+                
+                <div style="font-size: 20px; padding-bottom: 5px;"><a href="https://acingtheinternet.netlify.app/cyberneticdryad/previous" title="back">←</a>| <a href="https://acingtheinternet.netlify.app/"><img src="../punkwasp.neocities.org/images/buttons/asexuals_now.gif" alt="A button saying asexuals now" style="vertical-align:middle;"></a> |<a href="https://acingtheinternet.netlify.app/cyberneticdryad/next" title="next">→</a></div>
+                
+  							<div style="padding: 3px; display: inline-block"><a href="https://isaacfish.neocities.org/webring/10.html"><img src="../neptune.monster/webring/left.png"></a>&nbsp;<a href="https://isaacfish.neocities.org/webring/"><img src="../neptune.monster/webring/queercoded.png"></a>&nbsp;<a href="https://isaacfish.neocities.org/webring/12.html"><img src="../neptune.monster/webring/right.png"></a></div>
+                
+  							<div id="transring" style="width:250px"><script type="text/javascript" src="../transring.neocities.org/onionring-variables.js"></script><script type="text/javascript" src="../transring.neocities.org/nb-widget.html"></script></div>
+  							<p>see my other cliques & fanlistings <a href="collections/joined.html">here</a>!</p>
+  							</center>
+  						</div>
+  					</div>
+  					<div style="width:100%:">
+  						<center><img src="graphics/illustrations/elementaryscienc00payn_0021.png" style="max-width:73%;"></center>
+  					</div>
+            </div>
+          </div>
+        </div>
+        <div id="currently"></div>
+      </div>
+    </div>
+  </body>
+
+<!-- Mirrored from cyberneticdryad.neocities.org/index2 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 May 2025 08:39:48 GMT -->
+</html>

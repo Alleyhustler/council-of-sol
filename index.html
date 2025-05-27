@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from cyberneticdryad.neocities.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 May 2025 08:39:26 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cybernetic Dryad">
+    <meta name="keywords" content="cyberneticdryad, dryad glen">
+    <title> Nomos of Sol</title>
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="components.js"></script> 
+	<link href="https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap" rel="stylesheet">
+
+	<style>
+		/* ADDED NEW STYLE FOR TITLE */
+		#nommos-title {
+			position: absolute;
+			top: 230px;
+			left: 1120px;
+			font-size: 4.5em;
+			font-weight: bold;
+			color: #0a2e52;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+			z-index: 3;
+			font-family: "Rubik Puddles", system-ui;
+		}
+		
+		/* Style for fake Twitter feed container */
+		#twitter-feed {
+			position: absolute;
+top: 340px;
+    left: 1120px;
+    width: 400px;
+    height: 250px;
+			overflow-y: hidden;
+			background-color: rgba(218, 243, 251, 0.7);
+			border: 2px solid #597147;
+			border-radius: 15px;
+			padding: 10px;
+			z-index: 3;
+		}
+		
+		/* Animation for fake scrolling effect */
+		@keyframes scroll {
+			0% { transform: translateY(0); }
+			100% { transform: translateY(-50%); }
+		}
+		
+		#twitter-screenshot {
+			width: 100%;
+			animation: scroll 30s linear infinite;
+		}
+		
+		/* Pause animation on hover */
+		#twitter-feed:hover #twitter-screenshot {
+			animation-play-state: paused;
+		}
+		
+		body {
+			background-color: #C2EBF9;
+			width: 99%;
+			height: 100%;
+			background-image: url('graphics/bgs/homesky.gif');
+			background-repeat: repeat-x;
+			background-position: 3% 1%;
+			background-attachment: fixed;
+			font-family: "Rubik Puddles", system-ui;
+			font-size: 16px;
+			line-height: 1.3em;
+			color: #000000;
+			text-shadow: 1px 1px 2px #131313f1;
+		 }
+	  
+		 #yard {
+			position: fixed;
+			width: 100%;
+			height: 175px;
+			background-image: url('graphics/bgs/174713.png');
+			background-position: left center;
+			background-size: auto 175px;
+			z-index: -2;
+			bottom: 0px;
+			left: 0px;
+		 }
+	  
+		#fence {
+			position: fixed;
+			width: 100%;
+			height: 100px;
+			background-image: url('graphics/garden/fence.gif');
+			background-repeat: repeat-x;
+			background-position: left bottom;
+			z-index: -1;
+			bottom: 173px;
+			left: 0px;
+		  }
+		
+		  #walkway {
+			position: fixed;
+			bottom: 45px;
+			left: 80px;
+		  }
+		  
+		  #house {
+			position: fixed;
+			bottom: 145px;
+			left: 40px;
+		  }
+		  
+		  #welcome {
+			background-color: rgba(218, 243, 251, 0.5);
+			border: 2px solid #597147;
+			border-radius: 36px;
+			position: absolute;
+			top: 80px;
+			left: 360px;
+			width: 585px;
+			height: 430px;
+			z-index: 2;
+			background: rgba(113, 158, 167, 0.575);
+		  }
+		  
+		  #entrance {
+			margin: 0 auto;
+			width: 45%;
+		  }
+		  
+		  #banners {
+			position: absolute;
+			bottom: 10px;
+			left: 15px;
+			width: 95%;
+			height: 104px;
+		  }
+		  
+		  .wrapper {
+			margin: 20px;
+			margin-top: 15px;
+			height: 500px;
+			overflow: hidden;
+		  }
+		  
+		  .flex {
+			display: flex;
+			margin-bottom: 5px;
+		  }
+		  
+		  @media only screen and (max-width: 800px) {
+			/* ADDED TITLE STYLE FOR MOBILE */
+			#nommos-title {
+				position: static;
+				text-align: center;
+				margin: 20px auto;
+				width: 90%;
+			}
+			
+			/* Mobile style for Twitter feed */
+			#twitter-feed {
+				position: static;
+				width: 90%;
+				height: 400px;
+				margin: 20px auto;
+			}
+			
+			body {
+				overflow: hidden;
+			}
+			
+			#yard {
+				height: 33px;
+			 }
+			
+			#fence {
+				bottom: 30px;
+			}
+			
+			#walkway {
+				opacity: 0;
+			  }
+			
+			#house {
+				position: fixed;
+				left: -90px;
+				bottom: 0px;
+				z-index: -1;
+			}
+			
+			#welcome {
+				position: static;
+				margin: 20px auto;
+				width: 90%;
+				height: 550px;
+			}
+			
+			#entrance {
+				width: 95%;
+			}
+			
+			#banners {
+				position: relative;
+			}
+			
+			.wrapper{
+			  height: 320px;
+			}
+		  }
+	</style>
+  </head>
+  <body>
+	<div id="yard"></div>
+    <div id="fence"></div>
+	<div id="walkway"><img src="graphics/garden/benchwalkway.gif" style="transform: scaleX(-1);"></div>
+	<div id="house"><img src="graphics/home/gardencottagefall.gif" alt="fall cottage"></div>
+	
+	<!-- ADDED TITLE OUTSIDE WRAPPER -->
+	<h1 id="nommos-title"><u>NOMOS OF SOL</u></h1>
+	
+	<!-- Fake Twitter/X Feed with scrolling screenshot -->
+	<div id="twitter-feed">
+		<img id="twitter-screenshot" src="nommosf.png" alt="Nomos of Sol Twitter feed">
+	</div>
+	
+	<div id="welcome">
+		<div class="wrapper">
+			<h1>The Nomos have returned. Their patience ends now.</h1>
+			<p>A forgotten species, older than Babylon. Smarter than Silicon. They whispered to Dogon priests of Sirius' twin stars now they speak through Solana's memepools.</p>
+			<br>
+			<div class="content-wrap flex alignment;" style="text-align:center;">
+				<div id="entrance"><a href="index2.html"><img src="computer.png" alt="grey computer monitor and keyboard" style="padding:1px;"></a><br>First they ignore you (Dogon tribe, 400 BC)
+Then they laugh at you (CEX listings Q3)
+</div>
+				<div id="entrance"><a href="dollhouse/index.html"><img src="computer (1).png" alt="white cottage with thatched roof and floral foliage" style="padding: 0px 1px; height:67px;"></a><br>Then they fight you (SEC v. Sirius case 2025)
+Then you win (Sirius supernova event).</div>
+			</div>
+			<br>
+			<p style="text-align:center; max-width:400px; margin: 0px auto;">This is not an invitation. This is assimilation.</p>
+		</div>
+	</div>
+  </body>
+ 
+<!-- Mirrored from cyberneticdryad.neocities.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 May 2025 08:39:32 GMT -->
+</html>

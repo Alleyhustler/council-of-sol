@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from cyberneticdryad.neocities.org/dollhouse/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 May 2025 08:39:48 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cybernetic Dryad">
+    <meta name="keywords" content="cyberneticdryad, dryad glen">
+    <title>my home will be full of softness | dryad glen</title>
+    <script src="../../ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../components.js"></script>
+    <style>
+      body {
+        background-color: #ABBFE0;
+        width: 99%;
+        height: 100%;
+        background-image: url('../graphics/bgs/tilesky.jpg');
+        background-repeat: repeat-x;
+        background-position: top right;
+        background-attachment: fixed;
+      }
+      #flowerfield {
+        position: fixed;
+        width: 100%;
+        height: 150px;
+        background-image: url('../graphics/bgs/174713.png');
+        background-position: top center;
+        z-index: -2;
+        bottom: 0px;
+        left: 0px;
+      }
+      #midborder {
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        background-image: url('../graphics/garden/fence.gif');
+        background-repeat: repeat-x;
+        background-position: center bottom;
+        z-index: -1;
+        bottom: 148px;
+        left: 0px;
+      }
+      #roof {
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        margin: 0 auto;
+        background-image: url('../graphics/bgs/roof.gif');
+        background-repeat: repeat-x;
+        background-position: center top;
+        z-index: 2;
+        top: 0px;
+        left: 0px;
+      }
+
+      #housecontainer {
+        background-color: #3d0c02;
+        width: 1382px;
+        margin: 0 auto;
+        margin-top: 42px;
+        overflow: auto;
+        border: 1px hidden;
+        border-radius: 3px;
+      }
+      #housemain {
+        background-image: url('../graphics/bgs/natfl080.gif');
+        background-position: center bottom;
+        width: 1373px;
+        height: 85%;
+        margin: 5px auto;
+        overflow: auto;
+        border: 1px hidden;
+        border-radius: 2px;
+      }
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .positioning {
+        position: relative;
+        bottom: 0%;
+        left: 0%;
+      }
+
+      #bedroom {
+        background-color: none;
+        background-image: url('../graphics/bgs/tilewood2.jpg');
+        background-repeat: repeat-x;
+        background-position: center bottom;
+        width: 726px;
+        height: 400px;
+        overflow: hidden;
+        border: 5px solid #3d0c02;
+      }
+      .belcharm {
+        position: absolute;
+        right: 180px;
+        top: 78px;
+      }
+      .starwars {
+        position: absolute;
+        left: 140px;
+        bottom: 315px;
+        max-width: 70px;
+      }
+      .nug {
+        position: absolute;
+        left: 195px;
+        bottom: 311px;
+        max-width: 80px;
+      }
+      .globes {
+        position: absolute;
+        right: 200px;
+        bottom: 319px;
+      }
+      .catshelf {
+        position: absolute;
+        left: 38px;
+        top: 50px;
+      }
+      .fairywindow {
+        position: absolute; 
+        left: 156px;
+        top: 85px;
+      }
+      .bed {
+        position: absolute;
+        left: -5px;
+        bottom: 5px;
+        max-width: 280px;
+      }
+      .television {
+        position: absolute;
+        right: 30px;
+        bottom: 80px;
+      }
+
+      #hobbyroom {
+        background-color: none;
+        background-image: url('../graphics/bgs/tilewood2.jpg');
+        background-repeat: repeat-x;
+        background-position: center bottom;
+        width: 627px;
+        height: 400px;
+        overflow: hidden;
+        border: 5px solid #3d0c02;
+      }
+      .sewingshelf {
+        position: absolute;
+        left: 20px;
+        top: 60px;
+        max-width: 250px; 
+      }
+      .birdwindow {
+        position: absolute;
+        right: 60px;
+        top: 60px;
+        max-width: 180px;
+      }
+      .singer {
+        position: absolute;
+        left: 30px;
+        bottom: 70px;
+      }
+      .chair {
+        position: absolute;
+        left: 183px;
+        bottom: 60px;
+      }
+      .easel {
+        position: absolute;
+        right: 50px;
+        bottom: 40px;
+      }
+
+      #kitchen {
+        background-color: none;
+        background-image: url('../graphics/bgs/tilewood2.jpg');
+        background-repeat: repeat-x;
+        background-position: center bottom;
+        width: 550px;
+        height: 400px;
+        overflow: hidden;
+        border: 5px solid #3d0c02;
+      }
+      .stove {
+        position: absolute;
+        bottom: 65px;
+        left: 10px;
+      }
+      .herbrack {
+        position: absolute;
+        top: 5px;
+        left: -10px;
+        max-width: 230px;
+      }
+      .oil {
+        position: absolute;
+        top: 20px;
+        right: 190px;
+        max-width: 150px
+      }
+      .kitchenshelf {
+        position: absolute;
+        top: 70px;
+        right: 180px;
+        max-width: 180px;
+      }
+      .jukebox {
+        position: absolute;
+        left: 220px;
+        bottom: 80px;
+      }
+      .kitchenset {
+        position: absolute;
+        bottom: 70px;
+        right: 5px;
+      }
+
+      #livingroom {
+        background-color: none;
+        background-image: url('../graphics/bgs/tilewood2.jpg');
+        background-repeat: repeat-x;
+        background-position: center bottom;
+        width: 803px;
+        height: 400px;
+        overflow: hidden;
+        border: 5px solid #3d0c02;
+      }
+      .framemount {
+        position: absolute;
+        top: 78px;
+        left: 30px;
+      }
+      .sheepdoor {
+        width: 230px;
+        position: absolute;
+        bottom: 80px;
+        left: 150px;
+      }
+      .aquarium {
+        position: absolute;
+        bottom: -3px;
+        right: 280px;
+        max-width: 150px;
+      }
+      .tealight {
+        width: 70px;
+        position: absolute;
+        bottom: 253px;
+        right: 404px;
+      }
+      .computer {
+        position: absolute;
+        bottom: 130px;
+        right: 210px;
+      }
+      .rack {
+        position: absolute;
+        top: 40px;
+        right: 25px;
+      }
+      .welcomechest {
+        position: absolute;
+        bottom: 80px;
+        right: 10px;
+        max-width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="flowerfield"></div>
+    <div id="midborder"></div>
+    <div id="housecontainer">
+      <div id="housemain" class="flex">
+        <div id="bedroom" class="positioning">
+          <img src="../graphics/pokemon/charmbellossom.gif" class="belcharm">
+          <img src="../graphics/dividers/catnap.gif" class="catshelf">
+          <a href="../cathedral/media/starwars/index.html"><img src="../graphics/starwars/globedroids.gif" class="starwars"></a>
+          <a href="../cathedral/media/dragonage/index.html"><img src="../graphics/dragonage/nugprize.png" class="nug"></a>
+          <div class="globes">
+            <a href="../cathedral/media/pokemon/index.html"><img src="../graphics/pokemon/dollfurret.png"></a>
+            <img src="../graphics/fantasy/globefairyunicorn.gif" style="max-width:40px;">
+            <img src="../graphics/fantasy/globemermaidunicorn.gif" style="max-width:40px;">
+            <img src="../graphics/fantasy/globeabdragonfly.gif" style="max-width:40px;">
+            <img src="../graphics/fantasy/globedragonclaw.gif" style="max-width:40px;">
+            <img src="../graphics/fantasy/globeunicorns.gif" style="max-width:40px;">
+          </div>
+          <img src="../graphics/home/windowfairy.gif" class="fairywindow">
+          <img src="../graphics/home/bedbunny.png" class="bed">
+          <a href="../home/library/medialibrary.html"><img src="../graphics/home/television.gif" class="television"></a>
+        </div>
+        <div id="hobbyroom" class="positioning">
+          <img src="../collections/quilt/racksewing1.gif" class="sewingshelf">
+          <a href="../cathedral/papergods/forest.html"><img src="../graphics/home/windowbird.gif" class="birdwindow"></a>
+          <a href="../home/crafts/index.html"><img src="../graphics/crafts/singer.gif" class="singer"></a>
+          <a href="../home/library/index.html"><img src="../graphics/home/readingchair.gif" class="chair"></a>
+          <img src="../graphics/crafts/watercoloreasel.png" class="easel">
+        </div>
+        <div id="kitchen" class="positioning">
+          <img src="../graphics/home/herbshanging.gif" class="herbrack">
+          <a href="../home/kitchen/index.html"><img src="../graphics/home/stove.gif" class="stove"></a>
+          <img src="../graphics/home/jukebox.gif" class="jukebox">
+          <a href="../home/kitchen/notes.html"><img src="../graphics/home/kitchenset.gif" class="kitchenset"></a>
+          <img src="../graphics/home/herbsnoil.gif" class="oil">
+          <a href="../home/kitchen/pantry.html"><img src="../graphics/home/kitchenshelf.gif" class="kitchenshelf"></a>
+        </div>
+        <div id="livingroom" class="positioning">
+          <img src="../graphics/home/framedmountain.gif" class="framemount">
+          <a href="garden.html"><img src="../graphics/home/windowsheep.gif" class="sheepdoor"></a>
+          <img src="../graphics/home/shelftealight.gif" class="tealight">
+          <a href="../about.html"><img src="../graphics/home/grlcompute.gif" class="computer"></a>
+          <img src="../graphics/home/countryrack.gif" class="rack">
+          <img src="../graphics/home/chest.gif" class="welcomechest">
+          <a href="aquarium.html"><img src="../graphics/aquarium/cataquarium.gif" class="aquarium"></a>
+        </div>
+      </div>
+    </div>
+    <div id="roof"></div>
+  </body>
+
+<!-- Mirrored from cyberneticdryad.neocities.org/dollhouse/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 May 2025 08:40:02 GMT -->
+</html>

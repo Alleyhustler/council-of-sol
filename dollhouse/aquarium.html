@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from cyberneticdryad.neocities.org/dollhouse/aquarium by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 May 2025 08:41:59 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cybernetic Dryad">
+    <meta name="keywords" content="cyberneticdryad, dryad glen">
+    <title>Fishy Fishy Fishy | Dryad Glen</title>
+    <script src="../../ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../components.js"></script> 
+    <style>
+      body {
+        background-image: url('../graphics/bgs/tilewater.gif');
+        overflow: hidden;
+      }
+
+      #topwaves {
+        position: absolute;
+        height: 20px;
+        width: 100%;
+        background-image: url('../graphics/aquarium/divwaves.gif');
+        background-repeat: repeat-x;
+        background-position: center top;
+        z-index: 1;
+        top: 0px;
+        left: 0px;
+      }
+
+      #bottomrocks {
+        position: absolute;
+        height: 40px;
+        width: 100%;
+        background-image: url('../graphics/bgs/tilepebbles.jpg');
+        background-repeat: repeat-x;
+        background-position: center bottom;
+        z-index: 1;
+        bottom: 0px;
+        left: 0px;
+      }
+
+      .leftdecor {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+      }
+      .leftbubbles {
+        position: absolute;
+        bottom: 0px;
+        left: 40px;
+      }
+      .ruins {
+        position: relative;
+        bottom: -15px;
+        left: 125px;
+        z-index: 2;
+      }
+      .sandyboi {
+        position: absolute;
+        bottom: -15px;
+        left: 0px;
+        z-index: 2;
+      }
+      .seagrass {
+        position: relative;
+        bottom: 30px;
+        left: 90px;
+      }
+
+      .rightdecor {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+      }
+      .rightseaweed {
+        position: absolute;
+        bottom: 25px;
+        right: 30px;
+      }
+      .rightbubbles {
+        position: relative;
+        bottom: 0px;
+        right: 0px;
+      }
+
+      .middecor {
+        position: absolute;
+        overflow: hidden;
+        bottom: -150px;
+        right: 0px;
+        z-index: 2;
+      }
+
+      .angelfamily {
+        position: absolute;
+        top: 125px;
+        left: 190px
+      }
+      .angelright {
+        position: relative;
+        top: 0px;
+        left: 0px;
+      }
+      .angelleft {
+        position: absolute;
+        top: 120px;
+        left: 55px;
+      }
+
+      .breathe {
+        position: absolute;
+        top: 20px;
+        left: 40%;
+      }
+
+      .guppybuddies {
+        position: absolute;
+        top: 150px;
+        right: 100px;
+      }
+
+      .coryfamily {
+        position: absolute;
+        bottom: 0px;
+        right: 25%;
+        z-index: 3;
+      }
+      .babies {
+        position: relative;
+        bottom: -10px;
+        right: 0px;
+      }
+      .babies2 {
+        position: relative;
+        bottom: 0px;
+        right: 15px;
+      }
+      .babies3 {
+        position: relative;
+        bottom: -15px;
+        right: -80px;
+      }
+      .swimmyboi {
+        position: relative;
+        bottom: -5px;
+        right: 100px;
+      }
+
+      .schooling {
+        position: absolute;
+        top: 250px;
+        right: 15%;
+      }
+
+      .whiteclam {
+        position: absolute;
+        bottom: 10px;
+        right: 55px;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+<!-- SCM Music Player https://www.scmplayer.net -->
+<script type="text/javascript" src="../../www.scmplayer.net/script.js" 
+data-config="{'skin':'skins/aquaBlue/skin.css','volume':50,'autoplay':false,'shuffle':true,'repeat':1,'placement':'top','showplaylist':false,'playlist':[{'title':'Somewhere Beyond the Sea | Bobby Darin','url':'https://www.youtube.com/watch?v=F-iHDPYJDj4'},{'title':'Wading in Waist-High Water | Fleet Foxes','url':'https://www.youtube.com/watch?v=tqVxd57H-cA'}]}" ></script>
+<!-- SCM Music Player script end -->
+
+
+<!-- waves n rocks -->
+    <div id="topwaves"></div>
+    <div id="bottomrocks"></div>
+
+<!-- decorative items -->
+    <div class="leftdecor">
+      <img src="../graphics/aquarium/divbubblesblu.gif" class="leftbubbles">
+      <img src="../graphics/aquarium/ruinsgreek.gif" class="ruins">
+      <img src="../graphics/aquarium/seagrass.gif" class="seagrass" style="max-width:100px;">
+      <img src="../graphics/aquarium/seagrass.gif" class="seagrass" style="max-width:100px;">
+      <img src="../graphics/aquarium/seagrass.gif" class="seagrass" style="max-width:100px;">
+      <img src="../graphics/aquarium/redtail.gif" class="sandyboi">
+    </div>
+    <div class="rightdecor">
+      <img src="../graphics/aquarium/divbubblesblu.gif" class="rightbubbles">
+      <img src="../graphics/aquarium/seaweed.gif" class="rightseaweed">
+    </div>
+    <div class="middecor">
+      <img src="../graphics/aquarium/reefrocks.gif" style="max-width:100%;">
+    </div>
+
+<!-- le fish -->
+    <div class="angelfamily">
+      <img src="../graphics/aquarium/angelfish1.gif" class="angelright">
+      <img src="../graphics/aquarium/angelfish2.gif" class="angelright">
+      <a href="#" onMouseover="window.alert('Fish are friends, not food.')"><img src="../graphics/aquarium/angelfish.gif" class="angelleft"></a>
+    </div>
+    <div class="breathe">
+      <img src="../graphics/aquarium/betta01.gif">
+    </div>
+    <div class="guppybuddies">
+      <img src="../graphics/aquarium/guppy.gif">
+      <img src="../graphics/aquarium/guppyswishy.gif">
+    </div>
+    <div class="coryfamily">
+      <img src="../graphics/aquarium/divcoryswim.gif" class="swimmyboi">
+      <div class="babies">
+        <img src="../graphics/aquarium/corydora01.gif" alt="corydora" style="padding:10px;">
+        <img src="../graphics/aquarium/corydora02.gif" alt="corydora" style="padding:5px;">
+        <img src="../graphics/aquarium/corydora03.gif" alt="corydora" style="padding:5px;">
+        <img src="../graphics/aquarium/corydora04.gif" alt="corydora" style="padding:0px;">
+      </div>
+      <div class="babies3">
+        <img src="../graphics/aquarium/corydora08.gif" alt="corydora">
+        <img src="../graphics/aquarium/corydora09.gif" alt="corydora" style="padding-left:20px;">
+      </div>
+      <div class="babies2">
+        <img src="../graphics/aquarium/corydora05.gif" alt="corydora" style="padding:10px;">
+        <img src="../graphics/aquarium/corydora06.gif" alt="corydora" style="padding:5px;">
+        <img src="../graphics/aquarium/corydora07.gif" alt="corydora" style="padding-left:20px;">
+      </div>
+    </div>
+    <div class="schooling">
+      <img src="../graphics/aquarium/neonfish.gif" alt="neon schooling fish" style="max-width: 375px;">
+      <img src="../graphics/aquarium/tropicalfish.gif" alt="blue and green swimmy fish" style="width: 300px; height: 125px; object-fit: cover; object-position:0% 0%;">
+    </div>
+    <div class="whiteclam">
+      <a href="index.html"><img src="../graphics/aquarium/clam.gif" alt="white clam"></a>
+    </div>
+  </body>
+
+<!-- Mirrored from cyberneticdryad.neocities.org/dollhouse/aquarium by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 May 2025 08:42:08 GMT -->
+</html>

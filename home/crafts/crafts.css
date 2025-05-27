@@ -1,0 +1,125 @@
+body {
+  background-image: url('../../graphics/bgs/hshpsew.gif');
+  background-attachment: fixed;
+  font-family: verdana,sans-serif;
+  font-size: 14px;
+  height: 1.3em;
+  color: #3F4A43;
+}
+
+body a {
+  color: #5C5961;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+#contain {
+  background-image: url('../../graphics/bgs/ritvaknit.gif');
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+  width: 950px;
+  height: 650px;
+  margin: 0 auto;
+  margin-top: 50px;
+  overflow: hidden;
+  border: hidden;
+  border-radius: 3px;
+}
+
+.flex {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.cozydecor {
+    position: absolute;
+    right: 23px;
+    bottom: 25px;
+}
+  
+.cozydecor2 {
+  position: absolute;
+  right: 30px;
+  bottom: 23px;
+}
+
+#navigation {
+  background-attachment: fixed;
+  background-position: center center;
+  width: 136px;
+  height: 610px;
+  margin: 20px auto;
+  margin-left: 15px;
+  overflow: hidden;
+  border: hidden;
+  border-radius: 9px;
+}
+
+#maintext {
+  background-image: url('../../graphics/bgs/ritvasummer.gif');
+  background-attachment: fixed;
+  background-position: center center;
+  width: 740px;
+  height: 580px;
+  margin: 20px auto;
+  margin-right: 15px;
+  overflow: auto;
+  border: hidden;
+  border-radius: 9px;
+}
+
+/* To keep your site RESPONSIVE, make sure this variable matches the width for --container-width UNLESS --container-width is 100% - if it's 100%, you'll need to manually input a breakpoint. */
+@media only screen and (max-width: 800px) {
+  body {
+    background-attachment: scroll;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+  }
+  
+  .cozy {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0px;
+    right: 0px;
+  }
+  
+  .cozydecor {
+    right: 5px;
+    bottom: 5px;
+  }
+  
+  .cozydecor2 {
+    right: 5px;
+    bottom: 5px;
+  }
+
+  #contain {
+    width: 90%;
+    height: 675px;
+    margin: 20px auto;
+    overflow: auto;
+    position: relative;
+  }
+
+  #navigation {
+    width: 88%;
+    height: 275px;
+    display: block;
+    order: 2;
+    margin: 10px auto 20px;
+    overflow: auto;
+  }
+
+  #maintext {
+    width: 80%;
+    height: 600px;
+    display: block;
+    order: 1;
+    margin: 20px auto 10px;
+    position: relative;
+  }
+}

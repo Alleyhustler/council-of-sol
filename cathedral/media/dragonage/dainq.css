@@ -1,0 +1,142 @@
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #2D0000;
+        background-image: url('../../../graphics/dragonage/inquisitor.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 50% 50%; 
+        background-repeat: no-repeat;
+        font-family: verdana,sans-serif;
+        font-size: 12px;
+        line-height: 1.3em;
+        color: #363F3E;
+      }
+
+      body a {
+        color: #363F3E;
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing: 1px;
+      }
+
+      #main-container {
+        max-width: 800px;
+        height: 100%;
+        margin: auto;
+        margin-top: 6%;
+        background-color: none;
+        border-radius: 12px;
+      }
+
+      .flex {
+        display: flex;
+        margin-bottom: 5px;
+      }
+
+      #content-container {
+        width: 75%;
+        margin-bottom: 5px;
+        height: 500px;
+        overflow: auto;
+        background-color: #E6F3F3;
+        border: 3px solid #6A7E89;
+        border-radius: 12px;
+        opacity: 0.9;
+      }
+
+      #left-sidebar {
+        width: 25%;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        height: 500px;
+        text-align: center;
+        overflow: hidden;
+        background-color: #E6F3F3;
+        border: 3px solid #6A7E89;
+        border-radius: 12px;
+        opacity: 0.9;
+      }
+
+      #header-contained {
+        height: 21px;
+        margin-bottom: 10px;
+        background-image: url('../../../graphics/dividers/rosesblack.gif');
+        background-position: center center;
+        border-radius: 12px;
+      }
+
+      #footer-gen {
+        height: 21px;
+        margin-bottom: 10px;
+        background-image: url('../../../graphics/dividers/rosesblack.gif');
+        background-position: center center;
+        border-radius: 12px;
+      }
+
+      .wrapper {
+        padding: 25px;
+        padding-top: 15px;
+      }
+
+      .sidebar-wrapper {
+        padding: 15px;
+        height: 500px;
+        overflow: auto;
+      }
+
+      .footer-wrapper {
+        padding: 8px;
+      }
+      
+      table {
+        border-collapse: collapse;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      th, td {
+        padding: 3px;
+      }
+
+      tr:nth-child(odd) {
+        background-color: #82AABC;
+      }
+
+     .sideimg {
+        overflow: hidden;
+       /* Magic */
+       display: flex;
+       align-items: center; /* vertical */
+       justify-content: center; /* horizontal */
+      }
+
+      /* To keep your site RESPONSIVE, make sure this variable matches the width for --container-width UNLESS --container-width is 100% - if it's 100%, you'll need to manually input a breakpoint. */
+      @media only screen and (max-width: 800px) {
+        body {
+          background-position: 75% 50%;
+        }
+        
+        .flex {
+          flex-wrap: wrap;
+        }
+
+        #left-sidebar {
+          width: 80%;
+          height: 625px;
+          display: block;
+          order: 2;
+          margin: auto;
+          margin-bottom:10px;
+        }
+
+        #content-container {
+          width: 80%;
+          height: 625px;
+          display: block;
+          order: 1;
+          margin: auto;
+          margin-bottom:10px;
+        }
+      }

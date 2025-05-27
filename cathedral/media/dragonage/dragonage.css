@@ -1,0 +1,105 @@
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        font-family: verdana,sans-serif;
+        font-size: 12px;
+        line-height: 1.3em;
+        color: #7F7F7F;
+      }
+
+      body a {
+        color: #7F7F7F;
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing: 1px;
+      }
+
+      #main-container {
+        max-width: 734px;
+        height: 100%;
+        margin: auto;
+        margin-top: 7%;
+        background-color: none;
+        border-radius: 12px;
+      }
+
+      .flex {
+        display: flex;
+        margin-bottom: 5px;
+      }
+
+      #content-container {
+        width: 734px;
+        height: 520px;
+        margin-bottom: 5px;
+        overflow: hidden;
+        background-image: url('../../../graphics/dragonage/originsmenu.png');
+        background-size: 100%;
+        background-attachment: inherit;
+        background-position: 50% 50%;
+        background-color: black;
+      }
+
+      #header-contained {
+        height: 21px;
+        margin-bottom: 10px;
+        background-image: url('../../../graphics/garden/divrosesred.gif');
+        background-position: center center;
+        border-radius: 12px;
+      }
+
+      #footer-gen {
+        height: 21px;
+        margin-bottom: 10px;
+        background-image: url('../../../graphics/garden/divrosesred.gif');
+        background-position: center center;
+        border-radius: 12px;
+      }
+
+      .wrapper {
+        padding: 25px;
+        padding-top: 15px;
+      }
+
+      .footer-wrapper {
+        padding: 8px;
+      }
+      
+      table {
+        border: none;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th, td {
+        text-align: center;
+      }
+
+      /* To keep your site RESPONSIVE, make sure this variable matches the width for --container-width UNLESS --container-width is 100% - if it's 100%, you'll need to manually input a breakpoint. */
+      @media only screen and (max-width: 800px) {
+        body {
+          color: #E6F3F3;
+        }
+ 
+ 
+        body a {
+          color: #E6F3F3;
+        }
+
+        .flex {
+          flex-wrap: wrap;
+        }
+
+        #content-container {
+          width: 90%;
+          display: block;
+          order: 1;
+          margin: auto;
+          margin-bottom:10px;
+          overflow: visible;
+          background-size: auto;
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+        }
+      }
